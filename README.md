@@ -78,6 +78,9 @@ Allow processors to use throttle states in addition to performance states.
 ## Processor duty cycling
 ## Short running threads' processor architecture lower limit
 ## Processor idle disable
+Parameter:
+Enable idle
+Disable idle **Use all resource CPU that will make **
 
 
 
