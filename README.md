@@ -21,7 +21,9 @@ Power Savings **Prioritize idle mode**
 ## Disconnected Standby Mode
 Specifies the disconnected standby mode.
 Parameter:
+
 Normal **Computer will prioritize C3 (Sleep) than C1/C2**
+
 Aggresive  **Prioritize C1/C2**
 
 ## Networking connectivity in Standby
@@ -41,6 +43,7 @@ Parameter:
 Active **Neither HIPM or DIPM allowed. Link power management is not used. (Performance)**
 
 HIPM **HIPM (Host Initiated Link Power Management) only is allowed**
+
 HIPM+DIPM **HIPM and DIPM are allowed**
 
 DIPM **DIPM (Device Initiated Link Power Management) only is allowed**
@@ -49,6 +52,7 @@ Lowest **HIPM, DIPM, and DEVSLP (if DEVSLP is supported by the storage device) a
 
 ## APST ITPT for non-operational power states (ms) on Hybrid Optane drive
 Parameter:
+
 0-60000 millisecond **Lower for performance. Higher for battery life**
 
 ## Maximum Power
@@ -58,32 +62,48 @@ Parameter:
 
 ## APST ITPT for non-operational power states (ms) on Hybrid Nand Drive
 Parameter:
+
 0-60000 millisecond **Lower for performance. Higher for battery life**
 
 ## APST ITPT for non-operational power states (ms) on any NVMe drive
 Parameter:
+
 0-60000 millisecond **Lower for performance. Higher for battery life**
 
 ## Turn off hard disk after
 Parameter:
+
 0-70999999 **Lower for battery life**
 
 ## APST ITPT for operational power states (ms) on NVMe drive
 Parameter:
+
 0-60000 millisecond **Higher for performance. Lower for battery life**
 
 ## Hard disk burst ignore time
 Ignore a burst of disk activity up to the specified time when determining if the disk is idle.
 Parameter:
+
 0-70999999 **Higher for battery life. Lower for  performance.**
 
 ## APST ITPT for operational power states (ms) on Hybrid Nand drive
 Parameter:
+
 0-60000 millisecond **Higher for performance. Lower for battery life**
 
 ## APST ITPT for operational power states (ms) on Hybrid Optane drive
 Parameter:
+
 0-60000 millisecond **Higher for performance. Lower for battery life**
+
+## Secondary NVMe idle Timeout
+Specifies the amount of time the NVMe device must be in the primary not-operational power state before transitioning to the secodnary non-operational power state.
+Parameter:
+
+0-60000 millisecond **Higher for performance. Lower for battery life**
+
+
+
 # Desktop background settings
 
 
