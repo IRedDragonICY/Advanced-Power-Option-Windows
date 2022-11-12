@@ -97,19 +97,68 @@ Parameter:
 0-60000 millisecond **Higher for performance. Lower for battery life**
 
 ## Secondary NVMe idle Timeout
-Specifies the amount of time the NVMe device must be in the primary not-operational power state before transitioning to the secodnary non-operational power state.
+Specifies the amount of time the NVMe device must be in the primary not-operational power state before transitioning to the secondary non-operational power state.
 Parameter:
 
 0-60000 millisecond **Higher for performance. Lower for battery life**
 
+## Primary NVMe Idle Timeout
+Specifies the amount of the NVMe device must be idle before transitioning to the primary non-operational power state.
+Parameter:
 
+0-60000 millisecond **Higher for performance. Lower for battery life**
+
+## AHCI Link Power Management - Adaptive
+Automatically transit form Partial to Slumber
+Parameter:
+
+0-60000 millisecond **Higher for performance. Lower for battery life**
+
+## Secondary NVMe Power State Transition Latency Tolerance
+After the NVMe device has been in the primary non-operational power state for a certain amount of time, transition to the lowest non-operational power state whose ENLAT+EXLAT value is less than or equal to the value specified by this setting.
+Parameter:
+
+0-60000 millisecond **Lower for performance. Higher for battery life**
+
+## NVMe NOPPME 
+Enable or Disable NVMe Non-Operational Power State Permissive Mode
+Parameter:
+
+Off **Battery Life**
+
+On **Performance**
+
+## Primary NVMe Power State Transition Latency Tolerance
+When the NVMe device has been idle for a certain mount of time, transition to the lowest non-operational power state whose ENLAT+EXLAT value is less than or equal to the value specified by this setting.
+Parameter:
+
+0-60000 millisecond **Lower for performance. Higher for battery life**
 
 # Desktop background settings
+Change power management settings for your desktop background.
+
+## Slide show
+Specify when you want the desktop background slide show to be available.
+Parameter:
+
+Available
+
+Paused **The slide show is paused to save power (battery life)**
 
 
 # Sleep
 
 # USB settings
+Specify USB power settings for the USB hub driver
+
+## Hub Selective Suspend Timeout
+
+## Setting IOC on all TDs
+
+## USB 3 Link Power Management
+Specifies the power management policy to use for USB 3 links when they are idle.
+Parameter
+
 
 # idle Resiliency
 
