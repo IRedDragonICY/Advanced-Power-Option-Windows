@@ -167,9 +167,40 @@ Parameter
 
 # Interrupt Steering Settings
 
+## Interrupt Steering Mode
+Parameter:
+
+Default
+
+Any processor
+
+Any unparked processor with time delay
+
+Any unparked processor
+## Target Load
+Target load for each processor
+
+Parameter:
+
+0-10000 **Highest for Performance. Lowest for battery life.** 
+
+## Unparked time trigger
+Time a processor must remain unparked before interrupts are moved onto it.
+Parameter:
+0-100000 ** highest for battery life. Lowest for performance.**
 #  Power buttons and lid
 
 # PCI Express
+PCI Express Power Management Settins
+## Link State Power Management
+Specifies the Active State Power Management (ASPM) policy to use for capable links when the link is idle.
+Parameter:
+
+Off **Turn off ASPM for all links.(Performance)**
+
+Moderate Power Savings **Attempt to use LOS state when link is idle.**
+
+Maximum Power Savings **Attempt to use the L1 state when the link is idle(Battery life)**
 
 # Processor power management
 ## Proessor performance increase threshold
@@ -206,6 +237,15 @@ Disable idle **Use all resource CPU that will make **
 
 
 # Graphics settings
+Graphics Configuration Settings
+## GPU preference policy
+Policy to determine GPU prefence
+
+Parameter:
+
+None **(Performance)**
+
+Low Power**Prefer Low Power GPU (Battery life).** 
 
 # Display
 
