@@ -152,7 +152,10 @@ Paused **The slide show is paused to save power (battery life)**
 Specify USB power settings for the USB hub driver
 
 ## Hub Selective Suspend Timeout
+This value will be used as idle timeouts for all USB hubs.
+Parameter:
 
+0-100000 milliseconds (d
 ## Setting IOC on all TDs
 
 ## USB 3 Link Power Management
